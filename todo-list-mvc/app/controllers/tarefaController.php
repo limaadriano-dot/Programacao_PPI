@@ -1,11 +1,18 @@
 <?php 
-require_once __DIR__ . '/../models/tarefas.php';
-class TarefasController {
+require_once __DIR__ . '/../models/tarefa.php';
+class TarefaController {
 
     private $tarefaModel;
 
     public function __construct(){
         $this->tarefaModel = new Tarefa();
+    }
+    #Listar
+
+    public function index(){
+        $tarefas = $this->tarefaModel->listar();
+        include __DIR__ .'/../views/listar.php';
+
     }
 
     #Criar
@@ -17,10 +24,12 @@ class TarefasController {
         header("Location: index.php");
         
     }
+
+    
     #Excluir
 
     public function excluir(){
-        if(isset($_POST['delete'])){
+        if(isset($_GET['delete'])){
             $this->tarefaModel->excluir($_GET['delete']);
         }
         header("Location: index.php"); 
