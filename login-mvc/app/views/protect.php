@@ -2,11 +2,11 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Acesso Negado</title>
+    <title>XX Acesso Negado XX</title>
 </head>
 <body>
 
-<h2>Você não está autenticado!</h2>
+<h2>Não autenticado</h2>
 <a href="../../index.php">Ir para o Login</a>
 
 </body>

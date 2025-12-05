@@ -14,7 +14,7 @@ if(!isset($_SESSION['id'])){
 </head>
 <body>
 
-<h1>Bem-vindo, <?php echo $_SESSION['nome']; ?>!</h1>
+<h1>Seja Bem-vindo, <?php echo $_SESSION['nome']; ?>!</h1>
 
 <p><a href="index.php?action=logout">Sair</a></p>
 
